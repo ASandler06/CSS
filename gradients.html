@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Backgrounds and text</title>
+    <title>Gradients</title>
     <style>
       body {
         color: #291541;
@@ -47,23 +47,18 @@
         color: orange;
       }
       section {
-        background-color: #5ac88b;
+        background-image: linear-gradient(#5ac88b, yellow);
+
         text-align: center;
         width: 50%;
         margin: 0 auto 0 auto;
       }
       header {
-        background-color: #5ac88b;
+        background-image: linear-gradient(#5ac88b, yellow);
       }
     </style>
   </head>
-  <body
-    style="
-      background-image: url(images/yellow-website-background-image.jpg);
-      background-repeat: repeat;
-      background-size: 10%;
-    "
-  >
+  <body>
     <header>
       <nav>
         <ul>
@@ -94,7 +89,20 @@
       </nav>
     </header>
     <main>
-      <h1 style="text-shadow: 1px 1px 2px black">Backgrounds and text</h1>
+      <h1
+        style="
+          text-shadow: 3px 3px 2px black;
+          padding: 95px;
+          background-image: radial-gradient(
+            circle,
+            red 40px,
+            yellow 120px,
+            green
+          );
+        "
+      >
+        Gradients
+      </h1>
       <section>
         <p>
           the fitness graham pacer test <br />
