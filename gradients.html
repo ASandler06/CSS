@@ -13,6 +13,13 @@
       h1 {
         text-align: center;
         font-size: 48px;
+
+        visibility: hidden;
+
+        -o-animation: swivel 1s ease-in-out 0.3s forwards;
+        -moz-animation: swivel 1s ease-in-out 0.3s forwards;
+        -webkit-animation: swivel 1s ease-in-out 0.3s forwards;
+        animation: swivel 1s ease-in-out 0.3s forwards;
       }
       body p {
         font-weight: bold;
@@ -55,6 +62,17 @@
       }
       header {
         background-image: linear-gradient(#5ac88b, yellow);
+      }
+      @keyframes swivel {
+        from {
+          transform: rotateX(90deg);
+          transform: skewX(90deg);
+        }
+        to {
+          transform: rotateY(0deg);
+          transform: skewX(0deg);
+          visibility: visible;
+        }
       }
     </style>
   </head>
